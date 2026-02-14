@@ -1361,15 +1361,17 @@
             </p>
 
             <div class="glass-card contact-card" data-aos="fade-up" data-aos-delay="200">
-                <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                <form name="contact" netlify id="contactForm">
                     <div class="mb-4">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Your Email"
+                            required>
                     </div>
                     <div class="mb-4">
-                        <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                        <textarea class="form-control" name="message" id="message" placeholder="Your Message"
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-gradient btn-submit">
                         <i class="fas fa-paper-plane me-2"></i>Send Message
